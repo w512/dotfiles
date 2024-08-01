@@ -1,0 +1,29 @@
+[user]
+	name = Nick Blokhin
+	email = nick@blokhin.us
+
+[core]
+	editor = nano
+	# pager = delta
+
+[init]
+	defaultBranch = master
+
+[color]
+	ui = auto
+	status = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+
+[pull]
+	rebase = false
+
+[url "git@github.com:"]
+        insteadOf = https://github.com/
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = false
+	# side-by-side = true
+	hunk-header-style = omit
