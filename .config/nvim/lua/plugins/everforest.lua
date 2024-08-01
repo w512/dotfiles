@@ -7,8 +7,8 @@ return {
     -- directly inside the plugin declaration.
     --   vim.g.everforest_background = "hard"
     --   vim.g.everforest_cursor = "green"
-    --   vim.g.everforest_current_word = "none"
     --   vim.g.everforest_enable_italic = true
+    vim.g.everforest_current_word = "none"
     vim.cmd.colorscheme "everforest"
   end,
 }
