@@ -56,7 +56,7 @@ alias lvim="/Users/nick/.local/bin/lvim"
 
 
 prompt_git_branch() {
-    autoload -Uz vcs_info 
+    autoload -Uz vcs_info
     precmd_vcs_info() { vcs_info }
     precmd_functions+=( precmd_vcs_info )
     setopt prompt_subst
@@ -93,9 +93,9 @@ prompt_purification_setup() {
 prompt_purification_setup
 
 
-# If a new command line being added to the history list duplicates an older one, 
+# If a new command line being added to the history list duplicates an older one,
 # the older command is removed from the list (even if it is not the previous event).
-setopt hist_ignore_all_dups   
+setopt hist_ignore_all_dups
 
 
 bindkey '^[[A' history-substring-search-up
@@ -126,8 +126,10 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export BAT_THEME="ansi"
 
 
-# EZA 
-# https://github.com/eza-community/eza 
+# EZA
+# https://github.com/eza-community/eza
 alias ll='eza -l --time-style=long-iso --all --sort modified'
 
 
+# fzf shell integration
+source <(fzf --zsh)
