@@ -1,3 +1,5 @@
+## Use this repo with [Stow](https://www.gnu.org/software/stow/)
+
 ```
 brew install stow
 
